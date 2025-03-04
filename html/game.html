@@ -3,29 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juse Game</title>
+    <title>Orange Juice</title>
     <link rel="stylesheet" href="../css/game.css" />
+    <link rel="icon" href="../image/icon.png" type="image/x-icon">
   </head>
   <body>
+   <!--go back-->
+   
+   <a id="back" href="main.html">
+    <img src="../image/Picture1 (1).png" alt="back">
+  </a>
+
+<span id="cuptext">cups filled:</span>  <br>
+<p id="cup"></p>  
+
+<span id="playertext">your name: </span>  <br>
+<p id="player"></p> 
+
     <!--a timer-->
 <div id="timer">00:00:00</div>
     <div id="game-container"></div>
+    
+    <!-- cup -->
     <div id="bowl">
-      <div class="red-fill"></div>
-      
+      <div class="red-fill"></div> 
     </div>
-    <div id="kash"> </div>
+  
    
     <!--a message-->
     <div id="message">
-      <img id="logo" src="../img/logo.png" />
+    
       <h1 id="words"></h1>
       <h3>
-        number of cups you filled:
+       <p style=" text-decoration: underline"> number of cups you filled:</p>
         <p id="cups">0</p>
-        number of minutes you filled:
+        <p style=" text-decoration: underline"> number of minutes you filled:</p> 
         <p id="time">00:00:00</p>
-      </h3>
+        <p style=" text-decoration: underline">the records: </p>
+       first: <span id="player1"></span> :
+       <span id="max1">0 </span><br>
+       second:  <span id="player2"></span> :
+       <span id="max2">0 </span><br>
+       third:  <span id="player3"></span> :
+       <span id="max3">0 </span><br>
+         </h3>
       <a id="play" class="options" href="../html/game.html">new game</a>
     </div>
 
