@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cup</title>
+<style>
+  .cup {
+    width: 100px;
+    height: 200px;
+    border: 10px solid #000;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cup:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80px;
+    height: 30px;
+    background-color: #F4A460; /* שקוף */
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+  .ice {
+    width: 0.5%;
+    height: 20%;
+    background-color:black; /* צבע קרח */
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%; 
+  }
+   
+</style>
+</head>
+<body>
+
+<div class="cup"></div>
+<div class="ice"></div>
+
+</body>
+</html>

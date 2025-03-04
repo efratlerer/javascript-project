@@ -1,0 +1,237 @@
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+}
+body {
+  background-color: lightblue;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.drip {
+ 
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  /* background-color: rgb(241, 18, 76); */
+  border-radius: 100%;
+  border-top-right-radius: 10%;
+  transform: rotate(0.8turn) rotate(0.07turn); /* סיבוב חצי סיבוב שמאלה */
+}
+
+.orange {
+  opacity: 0.9;
+  background-color: #ffa500;
+}
+
+.pink {
+  opacity: 0.7;
+  background-color: crimson;
+}
+
+.green {
+  opacity: 0.5;
+  background-color: green;
+}
+
+.yellow {
+  opacity: 0.7;
+  background-color: yellow;
+}
+
+#bowl {
+  /* position: fixed;
+  bottom: 0;
+  right: 33vw;
+  width: 30%;
+  height: 300px;
+  background-color: transparent;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  border-radius: 0 0 50% 50%;
+  overflow: hidden;
+  animation: slide 2s ease-out;
+  animation-name: enter; */
+
+
+
+  /* left: 20%; */
+  /* bottom: 0;
+  right: 0vw;
+  width: 120px;
+  height: 200px;
+  border: 10px solid #000;
+  position: relative;
+  overflow: hidden;
+  transform:rotate(1turn) ;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top: hidden;  */
+  
+   /* border-top: 100px; 
+    */
+    animation: slide 2s ease-out;
+       
+    animation-name: enter;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    width: 200px;
+    height: 305px;
+    border: 10px solid gray;
+    overflow: hidden;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: hidden;
+    border-bottom:  35px solid gray; 
+   
+     
+  }
+  
+  
+ #kash{
+  background-color: black;
+  color: black;
+  width: 20%;
+  height: 50%;
+ /* content: "";
+ position: absolute;
+ bottom: -15px;  */
+ /* מתקן את המרחק בין הקש לתחתית הכוס */
+ /* left: 50%;
+ transform: translateX(-50%);
+  width: 50px;  */
+  /* רוחב הקש */
+ /* height: 15px; */
+  /* גובה הקש */
+ /* background-color: red;  */
+ /* צבע הקש */
+ /* border-radius: 50%;  */
+ /* מעגל כדי ליצור קש עם קצה מעט עגול */
+ } 
+#bowl .red-fill {
+
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 3%;
+  position: absolute;
+   bottom: 0;
+  /* left: 0;  */
+  width: 96%;
+  height: 0;
+  background-color:rgb(255,165,0.5);
+  transition: height 0.5s ease-in;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* a message */
+#message {
+  position: relative;
+  background-color: bisque;
+  margin: auto;
+  padding: 0;
+  border: 5px solid white;
+  width: 50%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 bisque, 0 6px 20px 0 bisque;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  z-index: 1;
+  display: none;
+}
+
+
+@-webkit-keyframes animatetop {
+  from {
+    top: 0;
+    opacity: 1
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+h1,
+h3 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 80px;
+  font-family: "Pacifico", cursive;
+  color: #ff1493;
+  text-shadow: 5px 5px aqua, 10px 10px 5px #ff8c00;
+}
+h3 {
+  font-size: 200%;
+}
+
+.options {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: bisque;
+  border: 3px solid aqua;
+  color: #ff1493;
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+  border-radius: 5px;
+}
+
+@keyframes enter {
+  from {
+    right: 0;
+  }
+  to {
+    right: 33vw;
+  }
+}
+
+@keyframes exist {
+  from {
+    right: 33vw;
+  }
+  to {
+    left: 0;
+  }
+}
+/* timer */
+#timer {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: white;
+  font-size: 200%;
+  font-family: "Pacifico", cursive;  padding: 0.5%;
+  padding-top: 1%;
+  border: rgb(241, 18, 76) 2px dashed;
+}
+
+
+
+
+
+
+
+
+
+

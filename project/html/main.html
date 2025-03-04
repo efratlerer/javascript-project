@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>waterlemon</title>
+    <link href="../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+</head>
+<body onload="startTimer()">
+    <!-- הוראות -->
+<button   id="myBtn" ><span style='font-size:50px;'>&#10068;</span></button>
+
+
+ <!-- לוגו -->
+ <div><img  id="logo" src="../image/images.jpg" width="1200" height="300"> </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Hi, <br>
+        in order to be a watermelon champion you will have to practice your speed,<br> 
+        when the drop flows from the fruit you will have to hit it straight into the glass, <br>
+        if you failed to do so, the process of filling the glasses will end and you will receive a message how many glasses you were able to fill<br>
+        So what are you waiting for???<br> Too bad for every drop!.
+        </p>
+  </div>
+
+</div>
+   
+    <!-- כפתור התחברוות למשחק -->
+    <div class="container">
+    <h1 id="enter_name">enter name</h1>
+    <input type="text" id="firstNameInput"> 
+    <img id="fruit-image" src="../image/images.jpg"    >
+   <i class="material-icons"  onclick="getFirstName() " style="font-size: 60px" >play_circle_outline</i>
+</div>
+
+
+    <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+</html>   
